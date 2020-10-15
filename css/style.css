@@ -29,10 +29,10 @@ div.container{
   transform: translate(0,-50%);
 }
 .right{
-  float: right;
+  /* float: right; */
   background: lightgreen;
   position: absolute;
-  /* per centrare a destra ho dovuto usare un altro metodo. Il position absolute scavalca il float right??? */
+  /* Ho usato position al posto di float perchè: per centrare verticalmente avrei dovuto abbinare line-height a float right, rendendo il sito più complesso da manutenere. Invece con position e translate, se un domani cambio l'altezza dell'header, il contenuto resta al centro - APPROVATO DA ANDREA */
   top: 50%;
   right: 0;
   transform: translate(0,-50%);

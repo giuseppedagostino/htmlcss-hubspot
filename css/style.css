@@ -3,30 +3,41 @@
   padding: 0;
   margin: 0;
 }
+
+span{
+  padding: 10px;
+}
 ul{
   list-style: none;
 }
 li{
   display: inline-block;
+  padding: 10px;
 }
 div.container{
   width: 80%;
   height: 100%;
   margin: 0 10%;
   background: red;
+  position: relative;
 }
 .left{
   float: left;
-  /* width: 20%; */
-  /* height: 80%; */
   background: green;
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
 }
 .right{
   float: right;
-  /* width: 20%; */
-  /* height: 80%; */
   background: lightgreen;
+  position: absolute;
+  /* per centrare a destra ho dovuto usare un altro metodo. Il position absolute scavalca il float right??? */
+  top: 50%;
+  right: 0;
+  transform: translate(0,-50%);
 }
+
 /* header */
 #header-top{
   width: 100%;

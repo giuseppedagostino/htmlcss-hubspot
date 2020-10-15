@@ -1,34 +1,55 @@
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-span{
-  padding: 10px;
-}
-ul{
+ul {
   list-style: none;
 }
-li{
+li {
   display: inline-block;
   padding: 10px;
 }
-div.container{
+h1 {
+  font-size: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+ul.left li:first-child {
+  border-right: 1px solid black;
+}
+ul.left > li {
+  display: inline-block;
+  padding: 10px;
+}
+ul.right > li {
+  display: inline-block;
+  padding: 10px;
+}
+div.container {
   width: 80%;
   height: 100%;
   margin: 0 10%;
+  /* questo margin serve a centrare i div container nella pagina */
   background: red;
   position: relative;
 }
-.left{
+div.half-container {
+  width: 40%;
+  height: 100%;
+  margin: 0 10%;
+  background: pink;
+  position: relative;
+}
+.left {
   float: left;
   background: green;
   position: absolute;
   top: 50%;
   transform: translate(0,-50%);
 }
-.right{
+.right {
   /* float: right; */
   background: lightgreen;
   position: absolute;
@@ -38,26 +59,57 @@ div.container{
   transform: translate(0,-50%);
 }
 
+.orange-button {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 15px;
+  border-radius: 5px;
+  background: orange;
+  color: white;
+  text-align: center;
+  /* perchè nei due pulsanti superiori non ho dovuto specificare text-align e il testo si trovava comunque al centro??? */
+  border: 1px solid orange;
+}
+
 /* header */
-#header-top{
+#header-top {
   width: 100%;
-  height: 100px;
+  height: 75px;
   background: lightgrey;
   border-bottom: 2px solid black;
 }
-#header-bottom{
+#header-bottom {
   width: 100%;
-  height: 100px;
+  height: 75px;
   background: white;
   border-bottom: 2px solid black;
 }
 
 /* main */
-#jambotron{}
-#services{}
-#numbers{}
-#sponsors{}
+#jumbotron {
+  width: 100%;
+  height: 695px;
+  background-image: url(../img/jumbotron.png);
+}
+#services {}
+#numbers {}
+#sponsors {}
 
 /* footer */
-#footer-top{}
-#footer-bottom{}
+#footer-top {}
+#footer-bottom {}
+
+#orange-button1 {
+  border-radius: 5px;
+  padding: 6px;
+  background: orange;
+  color: white;
+  border: 1px solid orange;
+}
+#white-button1 {
+  border-radius: 5px;
+  padding: 6px;
+  background: white;
+  color: orange;
+  border: 1px solid orange;
+}

@@ -102,8 +102,6 @@ h1 {
 div.container {
   width: 80%;
   height: 100%;
-  /* questo margin serve a centrare i div container nella pagina */
-  position: relative;
 }
 .left {
   float: left;
@@ -116,7 +114,7 @@ div.container {
 .orange-button {
   margin-top: 30px;
   margin-bottom: 30px;
-  padding: 15px;
+  padding: 20px;
   border-radius: 5px;
   background: #FF7A59;
   color: white;
@@ -162,7 +160,7 @@ div.half-container {
 
 /* gestione services */
 #services {
-  background: lightgreen;
+  /* background: lightgreen; */
 }
 /* container cubo contiene anche titolo e paragrafo */
 #container-cubo {
@@ -171,9 +169,12 @@ div.half-container {
   text-align: center;
   /* background-color: cyan; */
 }
-#container-cubo >h2 {
+#container-cubo > h2 {
   padding-top: 10px;
   padding-bottom: 20px;
+}
+#container-cubo > p{
+  padding: 20px 0;
 }
 #cubo-img {
   display: block;
@@ -182,17 +183,19 @@ div.half-container {
   margin-left: auto;
   margin-right: auto;
 }
-.services {
-  /* ho messo il font size a zero altrimenti mi compariva il fastidioso gap tra i div */
-  font-size: 0;
-  background: ghostwhite;
-  border-radius: 10px;
-  border: 1px solid black;
-  box-shadow: 5px 5px 5px 5px;
-  /* questi margin con le colonne andranno cambiati */
+#crm {
+  background: white;
+  border-radius: 5px;
   margin-left: 10%;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+/* ho specificato una classe font size zero altrimenti mi compariva il fastidioso gap tra i div */
+.fontsize0 {
+  font-size: 0;
+}
+.shadow {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 6px 0 rgba(0, 0, 0, 0.2);
 }
 div#trenta {
   display: inline-block;
@@ -207,6 +210,7 @@ div#trenta > img {
   margin-top: 30px;
 }
 div#settanta {
+  /* top 0 non agisce su nulla e non so perchè il container si trova in basso */
   top: 0;
   font-size: 16px;
   display: inline-block;

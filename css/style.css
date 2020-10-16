@@ -9,6 +9,13 @@ body {
   color: #33475B;
 }
 
+/* sto specificando clearfix come una classe per non doverla ripetere continuamente all'interno del css */
+.clearfix{
+  content: "";
+  display: table;
+  clear: both;
+  }
+
 /* header */
 #header-top {
   width: 100%;
@@ -21,10 +28,16 @@ body {
   z-index: 2;
 }
 #header-bottom {
+  position: relative;
   margin-top: 75px;
   width: 100%;
   height: 75px;
   background: white;
+}
+#logo {
+  width: 100px;
+  height: 100%;
+  line-height: 75px;
 }
 /* gestione delle liste */
 #header-top > div.container {
@@ -38,15 +51,19 @@ ul {
 }
 li {
   display: inline-block;
-  padding: 10px;
 }
 ul.left > li {
   display: inline-block;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+ul.left > li:first-child {
+  padding-left: 0;
 }
 ul.right > li {
   display: inline-block;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 a {
   text-decoration: none;
@@ -57,6 +74,9 @@ a.margin {
 }
 #world {
   margin-left: 5px;
+}
+#ico-search {
+  color: #00A4BD;
 }
 #orange-button-header {
   border-radius: 5px;
@@ -69,8 +89,8 @@ a.margin {
   border-radius: 5px;
   padding: 6px;
   background: white;
-  color: orange;
-  border: 1px solid orange;
+  color: #FF7A59;
+  border: 1px solid #FF7A59;
 }
 /* fine gestione delle liste */
 
@@ -87,19 +107,11 @@ div.container {
 }
 .left {
   float: left;
-  /* background: green; */
-  position: absolute;
-  top: 50%;
-  transform: translate(0,-50%);
+  line-height: 75px;
 }
 .right {
-  /* float: right; */
-  /* background: lightgreen; */
-  position: absolute;
-  /* Ho usato position al posto di float perchè: per centrare verticalmente avrei dovuto abbinare line-height a float right, rendendo il sito più complesso da manutenere. Invece con position e translate, se un domani cambio l'altezza dell'header, il contenuto resta al centro - APPROVATO DA ANDREA */
-  top: 50%;
-  right: 0;
-  transform: translate(0,-50%);
+  float: right;
+  line-height: 75px;
 }
 .orange-button {
   margin-top: 30px;
@@ -177,6 +189,7 @@ div.half-container {
   border-radius: 10px;
   border: 1px solid black;
   box-shadow: 5px 5px 5px 5px;
+  /* questi margin con le colonne andranno cambiati */
   margin-left: 10%;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -194,10 +207,10 @@ div#trenta > img {
   margin-top: 30px;
 }
 div#settanta {
+  top: 0;
   font-size: 16px;
   display: inline-block;
   width: 70%;
-  height: 100px;
   background: orange;
 }
 div#settanta >i {

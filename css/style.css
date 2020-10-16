@@ -58,6 +58,20 @@ a.margin {
 #world {
   margin-left: 5px;
 }
+#orange-button-header {
+  border-radius: 5px;
+  padding: 6px;
+  background: #FF7A59;
+  color: white;
+  border: 1px solid #FF7A59;
+}
+#white-button-header {
+  border-radius: 5px;
+  padding: 6px;
+  background: white;
+  color: orange;
+  border: 1px solid orange;
+}
 /* fine gestione delle liste */
 
 h1 {
@@ -92,11 +106,9 @@ div.container {
   margin-bottom: 30px;
   padding: 15px;
   border-radius: 5px;
-  background: orange;
+  background: #FF7A59;
   color: white;
-  text-align: center;
-  /* perchè nei due pulsanti superiori non ho dovuto specificare text-align e il testo si trovava comunque al centro??? */
-  border: 1px solid orange;
+  border: 1px solid #FF7A59;
 }
 
 /* main */
@@ -153,18 +165,43 @@ div.half-container {
 }
 #cubo-img {
   display: block;
-  max-width: 20%;
+  max-width: 30%;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 .services {
+  /* ho messo il font size a zero altrimenti mi compariva il fastidioso gap tra i div */
+  font-size: 0;
   background: ghostwhite;
   border-radius: 10px;
-  border: 2px solid black;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px 5px;
   margin-left: 10%;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+div#trenta {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}
+div#trenta > img {
+  display: block;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+div#settanta {
+  font-size: 16px;
+  display: inline-block;
+  width: 70%;
+  height: 100px;
+  background: orange;
+}
+div#settanta >i {
+  color: #FF7A59;
 }
 /* fine gestione services */
 
@@ -180,18 +217,3 @@ footer {
 }
 #footer-top {}
 #footer-bottom {}
-
-#orange-button1 {
-  border-radius: 5px;
-  padding: 6px;
-  background: orange;
-  color: white;
-  border: 1px solid orange;
-}
-#white-button1 {
-  border-radius: 5px;
-  padding: 6px;
-  background: white;
-  color: orange;
-  border: 1px solid orange;
-}

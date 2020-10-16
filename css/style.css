@@ -9,24 +9,14 @@ body {
   font-size: 16px;
   color: #33475B;
 }
-a {
-  text-decoration: none;
-  color: #33475B;;
-}
-a.margin {
-  margin-right: 10px;
-}
+
+/* gestione delle liste */
 ul {
   list-style: none;
 }
 li {
   display: inline-block;
   padding: 10px;
-}
-h1 {
-  font-size: 50px;
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 ul.left > li {
   display: inline-block;
@@ -36,31 +26,48 @@ ul.right > li {
   display: inline-block;
   padding: 10px;
 }
+a {
+  text-decoration: none;
+  color: #33475B;;
+}
+a.margin {
+  margin-right: 10px;
+}
+#world {
+  margin-left: 5px;
+}
+/* fine gestione delle liste */
+
+h1 {
+  font-size: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 div.container {
   width: 80%;
   height: 100%;
   margin: 0 10%;
   /* questo margin serve a centrare i div container nella pagina */
-  background: red;
+  /* background: red; */
   position: relative;
 }
 div.half-container {
   width: 40%;
   height: 100%;
   margin: 0 10%;
-  background: pink;
+  /* background: pink; */
   position: relative;
 }
 .left {
   float: left;
-  background: green;
+  /* background: green; */
   position: absolute;
   top: 50%;
   transform: translate(0,-50%);
 }
 .right {
   /* float: right; */
-  background: lightgreen;
+  /* background: lightgreen; */
   position: absolute;
   /* Ho usato position al posto di float perchè: per centrare verticalmente avrei dovuto abbinare line-height a float right, rendendo il sito più complesso da manutenere. Invece con position e translate, se un domani cambio l'altezza dell'header, il contenuto resta al centro - APPROVATO DA ANDREA */
   top: 50%;
@@ -96,7 +103,6 @@ div.half-container {
   width: 100%;
   height: 75px;
   background: white;
-  border-bottom: 2px solid black;
 }
 
 /* main */
@@ -104,6 +110,8 @@ div.half-container {
   width: 100%;
   height: 695px;
   background-image: url(../img/jumbotron.png);
+  background-position: right;
+  background-repeat: no-repeat;
 }
 #services {}
 #numbers {}
@@ -126,6 +134,12 @@ div.half-container {
   background: white;
   color: orange;
   border: 1px solid orange;
+}
+#prato {
+  width: 100%;
+  height: 50px;
+  border-top: 2px solid #33475B;
+  border-bottom: 2px solid #33475B;
 }
 #container-cubo {
   width: 60%;

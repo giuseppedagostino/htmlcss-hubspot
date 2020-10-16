@@ -106,6 +106,11 @@ div.half-container {
 }
 
 /* main */
+main {
+  background-color: ghostwhite;
+  height: 1500px;
+}
+/* gestione jumbotron */
 #jumbotron {
   position: relative;
   width: 100%;
@@ -128,8 +133,34 @@ div.half-container {
   border-top: 3px solid #33475B;
   border-bottom: 3px solid #33475B;
 }
+/* fine gestione jumbotron */
 
-#services {}
+/* gestione services */
+#services {
+  background: lightgreen;
+}
+/* container cubo contiene anche titolo e paragrafo */
+#container-cubo {
+  width: 60%;
+  margin: 0 20%;
+  text-align: center;
+  background-color: cyan;
+}
+#container-cubo >h2 {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+#cubo-img {
+  display: block;
+  max-width: 20%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* fine gestione services */
+
 #numbers {}
 #sponsors {}
 
@@ -156,25 +187,4 @@ footer {
   background: white;
   color: orange;
   border: 1px solid orange;
-}
-#prato {
-  width: 100%;
-  height: 50px;
-  border-top: 2px solid #33475B;
-  border-bottom: 2px solid #33475B;
-}
-#container-cubo {
-  width: 60%;
-  margin: 0 20%;
-  text-align: center;
-  background-color: cyan;
-  position: relative;
-}
-#cubo-img {
-  max-width: 10%;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
 }

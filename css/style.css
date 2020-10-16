@@ -102,6 +102,8 @@ h1 {
 div.container {
   width: 80%;
   height: 100%;
+  /* questo margin serve a centrarlo nello schermo */
+  margin: 0 10%;
 }
 .left {
   float: left;
@@ -124,7 +126,7 @@ div.container {
 /* main */
 main {
   background-color: ghostwhite;
-  height: 1500px;
+  height: 2000px;
 }
 /* gestione jumbotron */
 #jumbotron {
@@ -160,7 +162,7 @@ div.half-container {
 
 /* gestione services */
 #services {
-  /* background: lightgreen; */
+  background: lightgreen;
 }
 /* container cubo contiene anche titolo e paragrafo */
 #container-cubo {
@@ -219,6 +221,26 @@ div#settanta {
 }
 div#settanta >i {
   color: #FF7A59;
+}
+/* gestione colonne */
+#left-column {
+  float: left;
+  width: 28%;
+  height: 200px;
+  margin-right: 4%;
+}
+#center-column {
+  float: left;
+  width: 28%;
+  height: 200px;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+#right-column {
+  float: left;
+  width: 28%;
+  height: 200px;
+  margin-left: 4%;
 }
 /* fine gestione services */
 

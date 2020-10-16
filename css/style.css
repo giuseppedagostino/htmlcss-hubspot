@@ -4,6 +4,15 @@
   margin: 0;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #33475B;
+}
+
+a {
+  text-decoration: none;
+}
 ul {
   list-style: none;
 }
@@ -112,4 +121,19 @@ div.half-container {
   background: white;
   color: orange;
   border: 1px solid orange;
+}
+#container-cubo {
+  width: 60%;
+  margin: 0 20%;
+  text-align: center;
+  background-color: cyan;
+  position: relative;
+}
+#cubo-img {
+  max-width: 10%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }

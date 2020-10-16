@@ -91,7 +91,7 @@ div.half-container {
 #header-top {
   width: 100%;
   height: 75px;
-  background: lightgrey;
+  background: ghostwhite;
   border-bottom: 2px solid black;
   /* le istruzioni di seguito fissano in alto l'header-top */
   position: fixed;
@@ -107,17 +107,39 @@ div.half-container {
 
 /* main */
 #jumbotron {
+  position: relative;
   width: 100%;
   height: 695px;
+  /* colore di sfondo alla img, si vede solo nel punto giusto perchè viene sovrascritto dall'img */
+  background: #FFF3EE;
   background-image: url(../img/jumbotron.png);
   background-position: right;
   background-repeat: no-repeat;
 }
+/* fascia sull'immagine */
+#jumbotron::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #AFEBE4;
+  border-top: 3px solid #33475B;
+  border-bottom: 3px solid #33475B;
+}
+
 #services {}
 #numbers {}
 #sponsors {}
 
 /* footer */
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #32495B;
+  border-top: 5px solid black;
+}
 #footer-top {}
 #footer-bottom {}
 

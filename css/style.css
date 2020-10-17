@@ -186,7 +186,6 @@ div.half-container > h1 {
   margin-right: auto;
 }
 #crm {
-  background: white;
   margin-left: 10%;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -195,9 +194,10 @@ div.half-container > h1 {
 .fontsize0 {
   font-size: 0;
 }
-.shadow {
+.card {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 6px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+  background-color: white;
 }
 div#trenta {
   float: left;
@@ -233,23 +233,52 @@ div#settanta > ul {
 /* gestione colonne */
 #left-column {
   float: left;
-  width: 28%;
-  height: 400px;
-  margin-right: 4%;
+  width: 29%;
+  margin-right: 3.25%;
+  margin-top: 40px;
+  font-size: 16px;
+  text-align: center;
 }
 #center-column {
   float: left;
-  width: 28%;
+  width: 29%;
   height: 400px;
-  margin-left: 4%;
-  margin-right: 4%;
+  margin-left: 3.25%;
+  margin-right: 3.25%;
+  margin-top: 40px;
+  font-size: 16px;
+  text-align: center;
 }
 #right-column {
   float: left;
-  width: 28%;
+  width: 29%;
   height: 400px;
-  margin-left: 4%;
+  margin-left: 3.25%;
+  margin-top: 40px;
+  font-size: 16px;
+  text-align: center;
 }
+.column-top {
+  background: yellow;
+}
+.column-bottom {
+  background-color: lightblue;
+}
+.column-img {
+  max-width: 20%;
+  padding-top: 20px;
+}
+.column-top > h4 {
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.column-top > p {
+  padding-bottom: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.column-bottom > h5 {}
 /* fine gestione services */
 
 #numbers {}

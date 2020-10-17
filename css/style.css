@@ -6,6 +6,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  line-height: 25px;
   color: #33475B;
 }
 
@@ -48,9 +49,6 @@ body {
 }
 ul {
   list-style: none;
-}
-li {
-  display: inline-block;
 }
 ul.left > li {
   display: inline-block;
@@ -105,11 +103,11 @@ div.container {
   /* questo margin serve a centrarlo nello schermo */
   margin: 0 10%;
 }
-.left {
+ul.left {
   float: left;
   line-height: 75px;
 }
-.right {
+ul.right {
   float: right;
   line-height: 75px;
 }
@@ -146,6 +144,9 @@ div.half-container {
   /* background: pink; */
   position: relative;
 }
+div.half-container > h1 {
+  line-height: normal;
+}
 /* fascia sull'immagine */
 #jumbotron::after {
   content: "";
@@ -169,7 +170,6 @@ div.half-container {
   width: 60%;
   margin: 0 20%;
   text-align: center;
-  /* background-color: cyan; */
 }
 #container-cubo > h2 {
   padding-top: 10px;
@@ -187,7 +187,6 @@ div.half-container {
 }
 #crm {
   background: white;
-  border-radius: 5px;
   margin-left: 10%;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -198,48 +197,57 @@ div.half-container {
 }
 .shadow {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 div#trenta {
+  float: left;
   display: inline-block;
   width: 30%;
   text-align: center;
 }
 div#trenta > img {
   display: block;
-  width: 35%;
+  height: 100px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top: 47px;
 }
 div#settanta {
-  /* top 0 non agisce su nulla e non so perchè il container si trova in basso */
-  top: 0;
   font-size: 16px;
   display: inline-block;
-  width: 70%;
-  background: orange;
+  width: 60%;
 }
-div#settanta >i {
-  color: #FF7A59;
+div#settanta > h4 {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  font-size: 20px;
 }
+div#settanta > h5 {
+  padding-top: 20px;
+}
+div#settanta > ul {
+  padding-bottom: 20px;
+}
+/* per il momento non riesco a modificare ulteriormente la lista senza fare casini */
+
 /* gestione colonne */
 #left-column {
   float: left;
   width: 28%;
-  height: 200px;
+  height: 400px;
   margin-right: 4%;
 }
 #center-column {
   float: left;
   width: 28%;
-  height: 200px;
+  height: 400px;
   margin-left: 4%;
   margin-right: 4%;
 }
 #right-column {
   float: left;
   width: 28%;
-  height: 200px;
+  height: 400px;
   margin-left: 4%;
 }
 /* fine gestione services */

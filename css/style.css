@@ -320,11 +320,11 @@ div#settanta > ul {
   padding-bottom: 100px;
 }
 .single-data {
+  padding: 30px;
   display: inline-block;
   float: left;
   height: 200px;
   width: 25%;
-  /* background-color: cyan; */
   border-right: 1px solid white;
 }
 #numbers-top > .single-data:last-child {
@@ -333,7 +333,17 @@ div#settanta > ul {
 #numbers-bottom > .single-data:last-child {
   border-right: none;
 }
-/* QUAAAAA */
+.single-data > img {
+  height: 60px;
+  padding-bottom: 20px;
+}
+.single-data > h2 {
+  font-size: 50px;
+  padding-bottom: 25px;
+}
+.single-data > p {
+  font-size: 0.8em;
+}
 /* fine gestione numbers */
 
 /* gestione sezione sponsors */

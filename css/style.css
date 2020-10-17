@@ -128,9 +128,9 @@ ul.right {
 /* main */
 main {
   background-color: ghostwhite;
-  height: 2500px;
+  /* height: 2500px; */
 }
-/* gestione jumbotron */
+/* gestione sezione jumbotron */
 #jumbotron {
   position: relative;
   width: 100%;
@@ -165,7 +165,7 @@ div.half-container > h1 {
 }
 /* fine gestione jumbotron */
 
-/* gestione services */
+/* gestione sezione services */
 #services {
   background: lightgreen;
 }
@@ -185,7 +185,7 @@ div.half-container > h1 {
 #cubo-img {
   display: block;
   max-width: 30%;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -233,8 +233,6 @@ div#settanta > h5 {
 div#settanta > ul {
   padding-bottom: 20px;
 }
-/* per il momento non riesco a modificare ulteriormente la lista senza fare casini */
-
 /* gestione colonne */
 #left-column {
   float: left;
@@ -247,7 +245,6 @@ div#settanta > ul {
 #center-column {
   float: left;
   width: 29%;
-  height: 400px;
   margin-left: 3.25%;
   margin-right: 3.25%;
   margin-top: 40px;
@@ -257,20 +254,19 @@ div#settanta > ul {
 #right-column {
   float: left;
   width: 29%;
-  height: 400px;
   margin-left: 3.25%;
   margin-top: 40px;
   font-size: 16px;
   text-align: center;
 }
 .column-top {
-  background: yellow;
+  /* background: yellow; */
 }
 .column-bottom {
-  background-color: lightblue;
+  /* background-color: lightblue; */
 }
 .column-img {
-  max-width: 30%;
+  height: 120px;
   padding-top: 20px;
 }
 .column-top > h4 {
@@ -297,11 +293,18 @@ div#settanta > ul {
   color: white;
   padding-left: 10px;
 }
-
 /* fine gestione services */
 
-#numbers {}
+/* gestione sezione numbers */
+#numbers {
+  background-color: lightblue;
+  height: 600px;
+}
+/* fine gestione numbers */
+
+/* gestione sezione sponsors */
 #sponsors {}
+/* fine gestione sponsors */
 
 /* footer */
 footer {

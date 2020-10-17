@@ -120,11 +120,15 @@ ul.right {
   color: white;
   border: 1px solid #FF7A59;
 }
+.check-icon {
+  color: #FF7A59;
+  padding-right: 15px;
+}
 
 /* main */
 main {
   background-color: ghostwhite;
-  height: 2000px;
+  height: 2500px;
 }
 /* gestione jumbotron */
 #jumbotron {
@@ -220,9 +224,10 @@ div#settanta {
 div#settanta > h4 {
   padding-top: 40px;
   padding-bottom: 30px;
-  font-size: 20px;
+  font-size: 22px;
 }
 div#settanta > h5 {
+  font-size: 16px;
   padding-top: 20px;
 }
 div#settanta > ul {
@@ -265,11 +270,11 @@ div#settanta > ul {
   background-color: lightblue;
 }
 .column-img {
-  max-width: 20%;
+  max-width: 30%;
   padding-top: 20px;
 }
 .column-top > h4 {
-  font-size: 20px;
+  font-size: 22px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -278,7 +283,21 @@ div#settanta > ul {
   padding-left: 30px;
   padding-right: 30px;
 }
-.column-bottom > h5 {}
+.column-bottom > h5 {
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.column-bottom > ul {
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.column-bottom > ul > i {
+  color: white;
+  padding-left: 10px;
+}
+
 /* fine gestione services */
 
 #numbers {}

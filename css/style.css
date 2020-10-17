@@ -103,7 +103,7 @@ div.container {
   height: 100%;
   /* questo margin serve a centrarlo nello schermo */
   margin: 0 10%;
-  background-color: rgba(255,0,0,0.1);
+  /* background-color: rgba(255,0,0,0.1); */
 }
 ul.left {
   float: left;
@@ -170,8 +170,8 @@ div.half-container > h1 {
 
 /* gestione sezione services */
 #services {
-  padding-bottom: 40px;
-  background: lightgreen;
+  padding-bottom: 50px;
+  /* background: lightgreen; */
 }
 /* container cubo contiene anche titolo e paragrafo */
 #container-cubo {
@@ -307,26 +307,33 @@ div#settanta > ul {
   color: white;
 }
 #numbers-h2 {
-  padding-top: 40px;
+  padding-top: 50px;
   padding-bottom: 30px;
 }
 #numbers-top {
   height: 100%;
-  border-bottom: 2px solid white;
-  padding-top: 30px;
+  border-bottom: 1px solid white;
+  padding-top: 60px;
 }
 #numbers-bottom {
   height: 100%;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
 }
 .single-data {
   display: inline-block;
   float: left;
   height: 200px;
   width: 25%;
-  background-color: cyan;
-  border-right: 2px solid white;
+  /* background-color: cyan; */
+  border-right: 1px solid white;
 }
+#numbers-top > .single-data:last-child {
+  border-right: none;
+}
+#numbers-bottom > .single-data:last-child {
+  border-right: none;
+}
+/* QUAAAAA */
 /* fine gestione numbers */
 
 /* gestione sezione sponsors */

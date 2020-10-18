@@ -99,11 +99,11 @@ h1 {
   padding-bottom: 30px;
 }
 div.container {
+  position: relative;
   width: 80%;
   height: 100%;
   /* questo margin serve a centrarlo nello schermo */
   margin: 0 10%;
-  /* background-color: rgba(255,0,0,0.1); */
 }
 ul.left {
   float: left;
@@ -348,16 +348,13 @@ div#settanta > ul {
 
 /* gestione sezione sponsors */
 #sponsors {
-  background-color: lightblue;
-  height: 250px;
+  background-color: white;
 }
 /* parte superiore */
 #container-70 {
   padding: 60px;
   width: 70%;
   margin: 0 15%;
-  height: 100%;
-  background-color: rgba(255,0,0,0.1);
 }
 #sponsor-left {
   display: inline-block;
@@ -414,6 +411,20 @@ div#settanta > ul {
 }
 #container-40 > span {
   font-size: 0.8em;
+}
+#container-40 > h2 {
+  font-size: 32px;
+  line-height: 40px;
+  padding: 40px 0;
+}
+#container-40 > span {
+  padding-bottom: 40px;
+}
+#cinesina {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  max-width: 275px;
 }
 /* fine gestione sponsors */
 

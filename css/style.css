@@ -347,7 +347,69 @@ div#settanta > ul {
 /* fine gestione numbers */
 
 /* gestione sezione sponsors */
-#sponsors {}
+#sponsors {
+  background-color: lightblue;
+  height: 250px;
+}
+/* parte superiore */
+#container-70 {
+  padding: 60px;
+  width: 70%;
+  margin: 0 15%;
+  height: 100%;
+  background-color: rgba(255,0,0,0.1);
+}
+#sponsor-left {
+  display: inline-block;
+  float: left;
+  width: 25%;
+}
+#sponsor-left > h2 {
+  padding-bottom: 50px;
+  font-size: 50px;
+}
+#sponsor-right {
+  display: inline-block;
+  float: right;
+  width: 60%;
+}
+.single-sponsor {
+  display: inline-block;
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+#sponsor-right .single-sponsor:nth-child(1) {
+  background-image: url(../img/sponsor-1.webp);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#sponsor-right .single-sponsor:nth-child(2) {
+  background-image: url(../img/sponsor-2.webp);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#sponsor-right .single-sponsor:nth-child(3) {
+  background-image: url(../img/sponsor-3.webp);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#sponsor-right .single-sponsor:nth-child(4) {
+  background-image: url(../img/sponsor-4.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* parte inferiore */
+#container-40 {
+  width: 40%;
+}
+#container-40 > span {
+  font-size: 0.8em;
+}
 /* fine gestione sponsors */
 
 /* footer */

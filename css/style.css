@@ -104,7 +104,6 @@ h1 {
   height: 100%;
   /* questo margin serve a centrarlo nello schermo */
   margin: 0 10%;
-  background-color: rgba(255, 0, 0, 0.2);
 }
 ul.left {
   float: left;
@@ -446,12 +445,13 @@ div#settanta > ul {
 /* footer */
 footer {
   padding-top: 20px;
+  padding-bottom: 40px;
   width: 100%;
   background-color: #32495B;
 }
 #footer-top {
   height: 100%;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid ghostwhite;
 }
 .footer-ul {
   float: left;
@@ -467,11 +467,11 @@ footer {
   font-weight: bold;
   font-size: 1.1em;
 }
-#central-ul {
+.central-ul {
   color: ghostwhite;
   text-align: center;
 }
-#central-ul > li {
+.central-ul > li {
   display: inline-block;
   padding: 20px 10px;
 }
@@ -490,7 +490,14 @@ footer {
   display: inline-block;
   padding: 9px;
 }
-#footer-bottom {
+#footer-bottom-left {
+  float: left;
   color: ghostwhite;
-  height: 200px;
+}
+#footer-bottom-left > img {
+  padding-top: 30px;
+}
+#footer-bottom-right {
+  float: right;
+  padding-top: 20px;
 }

@@ -221,9 +221,19 @@ div#trenta > img {
   margin-top: 47px;
 }
 div#settanta {
+  position: relative;
   font-size: 16px;
   display: inline-block;
   width: 60%;
+}
+div#horizontal-rule {
+  position: absolute;
+  display: inline-block;
+  bottom: 107px;
+  right: 0px;
+  height: 50px;
+  width: 480px;
+  border-bottom: 2px solid black;
 }
 div#settanta > h4 {
   padding-top: 40px;

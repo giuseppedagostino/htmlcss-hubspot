@@ -477,15 +477,15 @@ footer {
   padding: 3px 0;
   color: #F5F8FA;
 }
+.footer-ul > li:hover {
+  color: lightblue;
+  cursor: pointer;
+}
 .footer-ul :first-child {
   color: white;
   padding-bottom: 15px;
   font-weight: bold;
   font-size: 1.1em;
-}
-.footer-ul > li > a {
-  text-decoration: none;
-  font-size: 1em;
 }
 .central-ul {
   color: ghostwhite;
@@ -498,6 +498,10 @@ footer {
 .central-ul > li > a {
   text-decoration: none;
   color: ghostwhite;
+}
+.central-ul > li > a:hover {
+  text-decoration: none;
+  color: lightblue;
 }
 #footer-button {
   padding: 10px;
@@ -517,9 +521,6 @@ footer {
   color: #F5F8FA;
   display: inline-block;
   padding: 9px;
-}
-#ul-icons > li:hover {
-  color: red;
 }
 #footer-bottom-left {
   float: left;

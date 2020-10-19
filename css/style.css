@@ -226,7 +226,7 @@ div#settanta {
   display: inline-block;
   width: 60%;
 }
-div#horizontal-rule {
+div#hr-crm {
   position: absolute;
   display: inline-block;
   bottom: 107px;
@@ -289,7 +289,7 @@ div#settanta > ul {
   padding-bottom: 20px;
 }
 .column-top > p {
-  padding-bottom: 70px;
+  padding-bottom: 60px;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -306,6 +306,12 @@ div#settanta > ul {
 .column-bottom > ul > i {
   color: white;
   padding-left: 10px;
+}
+.column-hr {
+  margin-left: 10%;
+  width: 80%;
+  margin-bottom: 10px;
+  border-bottom: 2px solid black;
 }
 /* fine gestione services */
 

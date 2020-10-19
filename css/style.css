@@ -448,10 +448,10 @@ footer {
   padding-top: 20px;
   width: 100%;
   background-color: #32495B;
-  color: ghostwhite;
 }
 #footer-top {
   height: 100%;
+  border-bottom: 1px solid white;
 }
 .footer-ul {
   float: left;
@@ -459,12 +459,21 @@ footer {
 }
 .footer-ul > li {
   padding: 3px 0;
+  color: #F5F8FA;
 }
 .footer-ul :first-child {
   color: white;
   padding-bottom: 15px;
   font-weight: bold;
   font-size: 1.1em;
+}
+#central-ul {
+  color: ghostwhite;
+  text-align: center;
+}
+#central-ul > li {
+  display: inline-block;
+  padding: 20px 10px;
 }
 #footer-button {
   padding: 10px;
@@ -477,7 +486,11 @@ footer {
   border: 1px solid ghostwhite;
 }
 #ul-icons > li {
+  color: #F5F8FA;
   display: inline-block;
   padding: 9px;
 }
-#footer-bottom {}
+#footer-bottom {
+  color: ghostwhite;
+  height: 200px;
+}

@@ -11,11 +11,56 @@ body {
 }
 
 /* sto specificando clearfix come una classe per non doverla ripetere continuamente all'interno del css */
+
+/* regole generali */
+a {
+  text-decoration: none;
+}
 .clearfix{
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
+    }
+h1 {
+    font-size: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
+.container {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    /* questo margin serve a centrarlo nello schermo */
+    margin: 0 10%;
+  }
+ul.left {
+  float: left;
+  line-height: 75px;
+}
+ul.right {
+  float: right;
+  line-height: 75px;
+}
+.orange-button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    background: #FF7A59;
+    color: white;
+    border: 1px solid #FF7A59;
+  }
+.orange-button:hover {
+    background-color: rgba(255, 122, 89, 0.8);
+    cursor: pointer;
+    border: 1px solid;
+    border-color: rgba(255, 122, 89, 0.8);
+  }
+.check-icon {
+    color: #FF7A59;
+    padding-right: 15px;
+  }
+/* fine regole generali */
 
 /* header */
 #header-top {
@@ -63,9 +108,13 @@ ul.right > li {
   padding-left: 10px;
   padding-right: 10px;
 }
-a {
-  text-decoration: none;
+ul.left > li > a {
   color: #33475B;
+  text-decoration: none;
+}
+ul.right > li > a {
+  color: #33475B;
+  text-decoration: none;
 }
 a.margin {
   margin-right: 10px;
@@ -100,49 +149,19 @@ a.margin {
   background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
   }
+/* SEZIONE BONUS AGGIUNTA DA ME */
+/* #languages {
+  display: none;
+  position: fixed;
+  top: 60px;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+#world:hover + #languages {
+  display: block;
+} */
 /* fine gestione delle liste */
-
-/* REGOLE GENERALI - posizionamento provvisorio */
-h1 {
-  font-size: 50px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.container {
-  position: relative;
-  width: 80%;
-  height: 100%;
-  /* questo margin serve a centrarlo nello schermo */
-  margin: 0 10%;
-}
-ul.left {
-  float: left;
-  line-height: 75px;
-}
-ul.right {
-  float: right;
-  line-height: 75px;
-}
-.orange-button {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 20px;
-  border-radius: 5px;
-  background: #FF7A59;
-  color: white;
-  border: 1px solid #FF7A59;
-}
-.orange-button:hover {
-  background-color: rgba(255, 122, 89, 0.8);
-  cursor: pointer;
-  border: 1px solid;
-  border-color: rgba(255, 122, 89, 0.8);
-}
-.check-icon {
-  color: #FF7A59;
-  padding-right: 15px;
-}
-/* fine regole generali */
 
 /* main */
 main {
@@ -481,11 +500,12 @@ footer {
   color: lightblue;
   cursor: pointer;
 }
-.footer-ul :first-child {
+.footer-ul > li:first-child {
   color: white;
   padding-bottom: 15px;
   font-weight: bold;
   font-size: 1.1em;
+  cursor: default;
 }
 .central-ul {
   color: ghostwhite;
@@ -518,9 +538,11 @@ footer {
   cursor: pointer;
 }
 #ul-icons > li {
-  color: #F5F8FA;
   display: inline-block;
   padding: 9px;
+}
+#ul-icons > li > a {
+  color: ghostwhite;
 }
 #footer-bottom-left {
   float: left;
@@ -578,4 +600,7 @@ footer {
 }
 #bonus-circle:hover + #bonus-robot {
   display: block;
+}
+#bonus-circle:hover {
+  cursor: pointer;
 }
